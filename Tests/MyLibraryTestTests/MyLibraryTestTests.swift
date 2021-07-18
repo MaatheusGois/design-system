@@ -3,8 +3,8 @@
 
     final class MyLibraryTestTests: XCTestCase {
         func testImageSource() {
-            let image = SCImage(named: "test")
-            let imageNil = SCImage(named: "")
+            let image = ImageManager(named: DSImage.coffe().name)
+            let imageNil = ImageManager(named: "")
 
             XCTAssertNotNil(image)
             XCTAssertNil(imageNil)

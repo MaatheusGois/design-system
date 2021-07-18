@@ -25,7 +25,9 @@ let package = Package(
         .target(
             name: "MyLibraryTest",
             dependencies: [],
-            resources: [.process("Images.xcassets")]
+            resources: [
+                .process("Resources")
+            ]
         ),
         .testTarget(
             name: "MyLibraryTestTests",

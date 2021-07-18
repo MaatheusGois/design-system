@@ -10,6 +10,9 @@ public struct MyLibraryTest: View {
     // Init
 
     public init(title: String) {
+        // Register fonts
+        FontManager.registerFonts()
+
         self.title = title
     }
 
@@ -17,23 +20,15 @@ public struct MyLibraryTest: View {
 
     public var body: some View {
         VStack {
-            Image(uiImage: SCImage(named: "test")!)
-                .resizable()
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+            DSImage.coffe().source
             Text(title)
                 .foregroundColor(.white)
+                .font(DSFont.montez(.title).font)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
         .edgesIgnoringSafeArea(.all)
     }
-}
-
-/// Get image from xcassets
-/// - Parameter name: image name
-/// - Returns: image source
-public func SCImage(named name: String) -> UIImage? {
-    UIImage(named: name, in: Bundle.module, compatibleWith: nil)
 }
 
 // MARK: - Private Preview

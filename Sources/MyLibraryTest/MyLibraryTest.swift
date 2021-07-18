@@ -46,7 +46,9 @@ public func SCImage(named name: String) -> UIImage? {
 }
 
 // MARK: - Private Preview
-fileprivate struct ContentView_Previews: PreviewProvider {
+
+/// If change `access modifier`, doesn't work the preview.
+struct ContentView_Previews: PreviewProvider {
     struct ViewPreview: View {
         var body: some View {
             MyLibraryTest(title: "Hello SwiftUI!")

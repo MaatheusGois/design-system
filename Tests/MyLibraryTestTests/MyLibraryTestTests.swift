@@ -11,8 +11,9 @@
         }
 
         func testClass() {
-            let title = MyLibraryTest().title
+            let testTitle = "Hello SwiftUI!"
+            let title = MyLibraryTest(title: testTitle).title
 
-            XCTAssertEqual(title, "Hello SwiftUI!")
+            XCTAssertEqual(title, testTitle)
         }
     }

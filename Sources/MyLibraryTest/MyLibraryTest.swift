@@ -2,7 +2,19 @@ import SwiftUI
 
 /// Content View Test
 public struct MyLibraryTest: View {
-    public var title: String = "Hello SwiftUI!"
+
+    // Properties
+
+    public var title: String
+
+    // Init
+
+    public init(title: String) {
+        self.title = title
+    }
+
+    // Body
+
     public var body: some View {
         VStack {
             Text(title)
@@ -37,7 +49,7 @@ public func SCImage(named name: String) -> UIImage? {
 fileprivate struct ContentView_Previews: PreviewProvider {
     struct ViewPreview: View {
         var body: some View {
-            MyLibraryTest()
+            MyLibraryTest(title: "Hello SwiftUI!")
         }
     }
 

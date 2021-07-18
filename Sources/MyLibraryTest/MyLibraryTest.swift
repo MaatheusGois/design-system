@@ -17,22 +17,13 @@ public struct MyLibraryTest: View {
 
     public var body: some View {
         VStack {
-            Text(title)
-                .padding()
-                .foregroundColor(.white)
             Image(uiImage: SCImage(named: "test")!)
                 .resizable()
-                .frame(
-                    width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,
-                    height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,
-                    alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/
-                )
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+            Text(title)
+                .foregroundColor(.white)
         }
-        .frame(
-            minWidth: .zero,
-            maxWidth: .infinity,
-            minHeight: .zero,
-            maxHeight: .infinity)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
         .edgesIgnoringSafeArea(.all)
     }

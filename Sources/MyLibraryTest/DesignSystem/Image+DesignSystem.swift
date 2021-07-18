@@ -29,7 +29,7 @@ public enum DSImage {
         }
     }
 
-    public var source: some View {
+    public var view: some View {
         switch self {
         case .coffe(let size), .checkbox(let size):
             return Image(uiImage: image)

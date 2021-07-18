@@ -20,14 +20,22 @@ public struct MyLibraryTest: View {
 
     public var body: some View {
         VStack {
-            DSImage.coffe().source
-            Text(title)
-                .foregroundColor(.white)
-                .font(DSFont.montez(.title).font)
+            DSImage.coffe(.large).view
+            titleView(title)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
         .edgesIgnoringSafeArea(.all)
+    }
+}
+
+// Builders
+
+fileprivate extension MyLibraryTest {
+    func titleView(_ text: String) -> some View {
+        Text(text)
+            .foregroundColor(.white)
+            .font(DSFont.montez(.title).font)
     }
 }
 

@@ -1,3 +1,3 @@
-# MyLibraryTest
+# Design System
 
 A description of this package.

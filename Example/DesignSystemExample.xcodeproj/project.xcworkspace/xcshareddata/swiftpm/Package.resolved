@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MyLibraryTest",
+        "repositoryURL": "https://github.com/MaatheusGois/design-system-ios.git",
+        "state": {
+          "branch": "main",
+          "revision": "924efdef1be7a8b4116b98eda33e20e5c8d64a47",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

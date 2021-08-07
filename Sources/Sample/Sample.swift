@@ -1,4 +1,14 @@
+//
+//  ImageManager.swift
+//
+//
+//  Created by Matheus Gois on 18/07/21.
+//
+
 import SwiftUI
+import Fonts
+import Images
+import Colors
 
 /// Content View Test
 public struct MyLibraryTest: View {

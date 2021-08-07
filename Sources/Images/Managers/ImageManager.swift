@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ImageManager.swift
 //  
 //
 //  Created by Matheus Gois on 18/07/21.

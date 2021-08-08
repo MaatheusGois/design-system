@@ -7,8 +7,8 @@
 
 import Foundation
 
-public struct ColorDataModel: Decodable {
-    public let colorBlackOverlay: TokenDataModel<OptionalDecodableColor>?
+public class ColorDataModel: Decodable, PropertyReflectable {
+    public var colorBlackOverlay: TokenDataModel<OptionalDecodableColor>?
     public let colorBlue: TokenDataModel<OptionalDecodableColor>?
     public let colorBlue800: TokenDataModel<OptionalDecodableColor>?
     public let colorBlue100: TokenDataModel<OptionalDecodableColor>?

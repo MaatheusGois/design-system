@@ -6,38 +6,31 @@
 //
 
 import Commons
-import UIKit
+import SwiftUI
 
 /// Colors - Design System
-public enum DSColor {
-
-    // Private properties
-
-    public static var colors: ColorDataModel? { CommonsManager.shared.theme?.color }
+public enum DSColor: String {
+    case colorBlackOverlay, colorBlue, colorBlue800, colorBlue100, colorWhite, colorPink, colorPink800, colorPink200, colorBlack, colorBlack800, colorBlack300, colorBlack700, colorBlack200, colorBlack100, colorYellow, colorYellow800, colorYellow100, colorGreen, colorGreen800, colorGreen100, colorRed, colorRed800, colorRed100
 
     // Public properties
 
-    public static var colorBlackOverlay: UIColor { colors?.colorBlackOverlay?.value.color ?? .white }
-    public static var colorBlue: UIColor { colors?.colorBlue?.value.color ?? .white }
-    public static var colorBlue800: UIColor { colors?.colorBlue800?.value.color ?? .white }
-    public static var colorBlue100: UIColor { colors?.colorBlue100?.value.color ?? .white }
-    public static var colorWhite: UIColor { colors?.colorWhite?.value.color ?? .white }
-    public static var colorPink: UIColor { colors?.colorPink?.value.color ?? .white }
-    public static var colorPink800: UIColor { colors?.colorPink800?.value.color ?? .white }
-    public static var colorPink200: UIColor { colors?.colorPink200?.value.color ?? .white }
-    public static var colorBlack: UIColor { colors?.colorBlack?.value.color ?? .white }
-    public static var colorBlack800: UIColor { colors?.colorBlack800?.value.color ?? .white }
-    public static var colorBlack300: UIColor { colors?.colorBlack300?.value.color ?? .white }
-    public static var colorBlack700: UIColor { colors?.colorBlack700?.value.color ?? .white }
-    public static var colorBlack200: UIColor { colors?.colorBlack200?.value.color ?? .white }
-    public static var colorBlack100: UIColor { colors?.colorBlack100?.value.color ?? .white }
-    public static var colorYellow: UIColor { colors?.colorYellow?.value.color ?? .white }
-    public static var colorYellow800: UIColor { colors?.colorYellow800?.value.color ?? .white }
-    public static var colorYellow100: UIColor { colors?.colorYellow100?.value.color ?? .white }
-    public static var colorGreen: UIColor { colors?.colorGreen?.value.color ?? .white }
-    public static var colorGreen800: UIColor { colors?.colorGreen800?.value.color ?? .white }
-    public static var colorGreen100: UIColor { colors?.colorGreen100?.value.color ?? .white }
-    public static var colorRed: UIColor { colors?.colorRed?.value.color ?? .white }
-    public static var colorRed800: UIColor { colors?.colorRed800?.value.color ?? .white }
-    public static var colorRed100: UIColor { colors?.colorRed100?.value.color ?? .white }
+    public var value: UIColor {
+        let token = CommonsManager.shared.theme?.color?[rawValue] as? TokenDataModel<OptionalDecodableColor>
+        return token?.value.color ?? .white
+    }
+}
+
+// MARK: - Extensions
+
+public extension UIColor {
+    static func ds(_ type: DSColor) -> UIColor {
+        return type.value
+    }
+}
+
+@available(iOS 13.0, *)
+public extension Color {
+    static func ds(_ type: DSColor) -> Color {
+        return type.value.iOS13
+    }
 }

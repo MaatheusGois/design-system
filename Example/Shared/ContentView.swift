@@ -17,13 +17,20 @@ struct ContentView: View {
     }
 
     var body: some View {
-        VStack {
-            Image(uiImage: DSIcon.calendar.image)
-                .renderingMode(.template)
-                .foregroundColor(DSColor.colorGreen.iOS13)
-            Text("Calendar")
-                .foregroundColor(DSColor.colorGreen.iOS13)
+        HStack(alignment: .center, spacing: 40) {
+            Menu("E-mail", .mail, .colorRed)
+            Menu("Calendar", .calendar, .colorGreen)
+            Menu("Favorites", .star, .colorBlue)
         }
+    }
+
+    func Menu(_ title: String, _ icon: DSIcon, _ color: DSColor) -> some View {
+        VStack {
+            Image(icon)
+                .renderingMode(.template)
+            Text(title)
+                .font(.ds(.subtitle2))
+        }.foregroundColor(.ds(color))
     }
 }
 

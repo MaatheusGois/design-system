@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+public extension String {
+    // Static properties
+    static var empty: Self = ""
+}

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Design System
+/// Design System - Icons
 public enum DSIcon: String, CaseIterable {
 
     // Cases
@@ -69,7 +69,32 @@ public enum DSIcon: String, CaseIterable {
 
     // Computed Properties
 
-    public var image: UIImage {
+    public var value: UIImage {
         return ImageManager(named: rawValue)!
+    }
+}
+
+// MARK: - Extensions
+
+public extension UIImage {
+    // Static Methods
+
+    static func ds(_ type: DSIcon) -> UIImage {
+        return type.value
+    }
+}
+
+@available(iOS 13.0, *)
+public extension Image {
+    // LifeCycle
+
+    init(_ type: DSIcon) {
+        self.init(uiImage: type.value)
+    }
+
+    // Static Methods
+
+    static func ds(_ type: DSIcon) -> Image {
+        return .init(uiImage: type.value)
     }
 }

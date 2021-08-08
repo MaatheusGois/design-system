@@ -4,17 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "DesignSystem",
+    name: "DesignSystemPackage",
     platforms: [
         .iOS(.v11)
     ],
     products: [
         .library(
             name: "Commons",
+            type: .static,
             targets: ["Commons"]
         ),
         .library(
             name: "Colors",
+            type: .static,
             targets: ["Colors"]
         ),
         .library(
@@ -24,6 +26,10 @@ let package = Package(
         .library(
             name: "Icons",
             targets: ["Icons"]
+        ),
+        .library(
+            name: "DesignSystem",
+            targets: ["DesignSystem"]
         )
     ],
     dependencies: [
@@ -54,6 +60,15 @@ let package = Package(
             dependencies: ["Commons"],
             resources: [
                 .process("Resources")
+            ]
+        ),
+        .target(
+            name: "DesignSystem",
+            dependencies: [
+                "Commons",
+                "Icons",
+                "Colors",
+                "Fonts"
             ]
         ),
         .testTarget(

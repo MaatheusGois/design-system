@@ -6,62 +6,18 @@
 //
 
 import SwiftUI
+import Commons
 
 /// Design System - Fonts
 public enum DSFont {
 
-    // Cases
+    // Private properties
 
-    /// Default size is `13px`
-    case montez(Size = .title)
-    /// Default size is `13px`
-    case montserrat(Size = .body)
+    private static var font: FontDataModel? { CommonsManager.shared.theme?.font }
+
+    // Public properties
+
+
 
     // Computed Properties
-
-    @available(iOS 13.0, *)
-    public var font: Font? {
-        switch self {
-        case let .montez(size):
-            return Font.custom(name, size: size.value)
-        case let .montserrat(size):
-            return Font.custom(name, size: size.value)
-        }
-    }
-
-    public var uiFont: UIFont? {
-        switch self {
-        case .montez(let size), .montserrat(let size):
-            return .init(name: name, size: size.value)
-        }
-    }
-
-    public var name: String {
-        switch self {
-        case .montez:
-            return "Montez-Regular"
-        case .montserrat:
-            return "Montserrat-Regular"
-        }
-    }
-}
-
-// MARK: - DSFont.Size
-
-public extension DSFont {
-    enum Size {
-        /// `size 13px`
-        case body
-        /// `size 15px`
-        case title
-
-        public var value: CGFloat {
-            switch self {
-            case .title:
-                return 24
-            case .body:
-                return 18
-            }
-        }
-    }
 }

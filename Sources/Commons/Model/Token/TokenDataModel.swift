@@ -8,7 +8,8 @@
 import UIKit
 
 public struct ThemeDataModel: Decodable {
-    public let colors: ColorDataModel?
+    public let color: ColorDataModel?
+    public let font: FontDataModel?
 }
 
 public struct TokenDataModel<T: Decodable>: Decodable {

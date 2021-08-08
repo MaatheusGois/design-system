@@ -14,8 +14,7 @@ public struct FontManager {
     // Static Methods
 
     public static func registerFonts() {
-        let allCases: [DSFont] = [.montez(), .montserrat()]
-        allCases.forEach { registerFont($0.name) }
+        ["Bold", "ExtraBold", "Medium", "Regular"].forEach { registerFont("Montserrat-"+$0) }
     }
 
     public static func registerFont(

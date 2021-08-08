@@ -5,15 +5,9 @@
 //  Created by Matheus Gois on 07/08/21.
 //
 
-import SwiftUI
-import Fonts
-import Commons
-import Colors
+import DesignSystem
 
 struct ContentView: View {
-
-    // Properties
-
 
     // LifeCycle
 
@@ -23,9 +17,13 @@ struct ContentView: View {
     }
 
     var body: some View {
-        Text("Hello, world!")
-            .font(DSFont.montez(.title).font)
-            .foregroundColor(DSColor.colorGreen.iOS13)
+        VStack {
+            Image(uiImage: DSIcon.calendar.image)
+                .renderingMode(.template)
+                .foregroundColor(DSColor.colorGreen.iOS13)
+            Text("Calendar")
+                .foregroundColor(DSColor.colorGreen.iOS13)
+        }
     }
 }
 

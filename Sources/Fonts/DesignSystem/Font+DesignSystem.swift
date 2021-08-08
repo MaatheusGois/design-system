@@ -19,12 +19,20 @@ public enum DSFont {
 
     // Computed Properties
 
+    @available(iOS 13.0, *)
     public var font: Font? {
         switch self {
         case let .montez(size):
             return Font.custom(name, size: size.value)
         case let .montserrat(size):
             return Font.custom(name, size: size.value)
+        }
+    }
+
+    public var uiFont: UIFont? {
+        switch self {
+        case .montez(let size), .montserrat(let size):
+            return .init(name: name, size: size.value)
         }
     }
 

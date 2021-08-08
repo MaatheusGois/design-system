@@ -13,9 +13,11 @@
 		8243C51F26BF100A00BABE1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8243C50A26BF100800BABE1E /* ContentView.swift */; };
 		8243C52026BF100A00BABE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8243C50B26BF100A00BABE1E /* Assets.xcassets */; };
 		8243C52126BF100A00BABE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8243C50B26BF100A00BABE1E /* Assets.xcassets */; };
-		8251455326BF108F00DF3353 /* Images in Frameworks */ = {isa = PBXBuildFile; productRef = 8251455226BF108F00DF3353 /* Images */; };
 		8251455526BF108F00DF3353 /* Colors in Frameworks */ = {isa = PBXBuildFile; productRef = 8251455426BF108F00DF3353 /* Colors */; };
 		8251455726BF108F00DF3353 /* Fonts in Frameworks */ = {isa = PBXBuildFile; productRef = 8251455626BF108F00DF3353 /* Fonts */; };
+		8251455B26BF21CA00DF3353 /* Icons in Frameworks */ = {isa = PBXBuildFile; productRef = 8251455A26BF21CA00DF3353 /* Icons */; };
+		8251455D26BF4AFD00DF3353 /* design-tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = 8251455C26BF4AFD00DF3353 /* design-tokens.json */; };
+		8251455E26BF4AFD00DF3353 /* design-tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = 8251455C26BF4AFD00DF3353 /* design-tokens.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,7 @@
 		8243C51A26BF100A00BABE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8243C51B26BF100A00BABE1E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		8251455826BF118400DF3353 /* design-system-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "design-system-ios"; path = ..; sourceTree = "<group>"; };
+		8251455C26BF4AFD00DF3353 /* design-tokens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "design-tokens.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,9 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8251455B26BF21CA00DF3353 /* Icons in Frameworks */,
 				8251455726BF108F00DF3353 /* Fonts in Frameworks */,
 				8251455526BF108F00DF3353 /* Colors in Frameworks */,
-				8251455326BF108F00DF3353 /* Images in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,12 +62,14 @@
 				8243C51226BF100A00BABE1E /* iOS */,
 				8243C51926BF100A00BABE1E /* macOS */,
 				8243C51126BF100A00BABE1E /* Products */,
+				8251455926BF21CA00DF3353 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		8243C50826BF100800BABE1E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8251455C26BF4AFD00DF3353 /* design-tokens.json */,
 				8243C50926BF100800BABE1E /* DesignSystemExampleApp.swift */,
 				8243C50A26BF100800BABE1E /* ContentView.swift */,
 				8243C50B26BF100A00BABE1E /* Assets.xcassets */,
@@ -98,6 +103,13 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		8251455926BF21CA00DF3353 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +127,9 @@
 			);
 			name = "DesignSystemExample (iOS)";
 			packageProductDependencies = (
-				8251455226BF108F00DF3353 /* Images */,
 				8251455426BF108F00DF3353 /* Colors */,
 				8251455626BF108F00DF3353 /* Fonts */,
+				8251455A26BF21CA00DF3353 /* Icons */,
 			);
 			productName = "DesignSystemExample (iOS)";
 			productReference = 8243C51026BF100A00BABE1E /* DesignSystemExample.app */;
@@ -185,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8243C52026BF100A00BABE1E /* Assets.xcassets in Resources */,
+				8251455D26BF4AFD00DF3353 /* design-tokens.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8243C52126BF100A00BABE1E /* Assets.xcassets in Resources */,
+				8251455E26BF4AFD00DF3353 /* design-tokens.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +359,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = maatheusgois.DesignSystemExample;
+				PRODUCT_BUNDLE_IDENTIFIER = maatheusgois.design.system.example;
 				PRODUCT_NAME = DesignSystemExample;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -367,7 +381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = maatheusgois.DesignSystemExample;
+				PRODUCT_BUNDLE_IDENTIFIER = maatheusgois.design.system.example;
 				PRODUCT_NAME = DesignSystemExample;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -468,11 +482,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8251455226BF108F00DF3353 /* Images */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8251455126BF108F00DF3353 /* XCRemoteSwiftPackageReference "design-system-ios" */;
-			productName = Images;
-		};
 		8251455426BF108F00DF3353 /* Colors */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8251455126BF108F00DF3353 /* XCRemoteSwiftPackageReference "design-system-ios" */;
@@ -482,6 +491,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8251455126BF108F00DF3353 /* XCRemoteSwiftPackageReference "design-system-ios" */;
 			productName = Fonts;
+		};
+		8251455A26BF21CA00DF3353 /* Icons */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Icons;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

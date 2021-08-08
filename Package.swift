@@ -6,9 +6,13 @@ import PackageDescription
 let package = Package(
     name: "DesignSystem",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v11)
     ],
     products: [
+        .library(
+            name: "Commons",
+            targets: ["Commons"]
+        ),
         .library(
             name: "Colors",
             targets: ["Colors"]
@@ -18,12 +22,8 @@ let package = Package(
             targets: ["Fonts"]
         ),
         .library(
-            name: "Images",
-            targets: ["Images"]
-        ),
-        .library(
-            name: "Sample",
-            targets: ["Sample"]
+            name: "Icons",
+            targets: ["Icons"]
         )
     ],
     dependencies: [
@@ -32,37 +32,33 @@ let package = Package(
     ],
     targets: [
         .target(
+            name: "Commons",
+            dependencies: []
+        ),
+        .target(
             name: "Colors",
-            dependencies: [],
+            dependencies: ["Commons"],
             resources: [
                 .process("Resources")
             ]
         ),
         .target(
             name: "Fonts",
-            dependencies: [],
+            dependencies: ["Commons"],
             resources: [
                 .process("Resources")
             ]
         ),
         .target(
-            name: "Images",
-            dependencies: [],
+            name: "Icons",
+            dependencies: ["Commons"],
             resources: [
                 .process("Resources")
-            ]
-        ),
-        .target(
-            name: "Sample",
-            dependencies: [
-                "Colors",
-                "Images",
-                "Fonts"
             ]
         ),
         .testTarget(
-            name: "ImagesTests",
-            dependencies: ["Images"]
+            name: "IconsTests",
+            dependencies: ["Icons"]
         )
     ]
 )

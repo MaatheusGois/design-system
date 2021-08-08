@@ -33,8 +33,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+        .package(name: "SnapshotTesting", url: "https://github.com/pointfreeco/swift-snapshot-testing.git", from: "1.9.0")
     ],
     targets: [
         .target(
@@ -73,7 +72,7 @@ let package = Package(
         ),
         .testTarget(
             name: "IconsTests",
-            dependencies: ["Icons"]
+            dependencies: ["Icons", "SnapshotTesting"]
         )
     ]
 )

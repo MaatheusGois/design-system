@@ -2,12 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "MyLibraryTest",
-        "repositoryURL": "https://github.com/MaatheusGois/design-system-ios.git",
+        "package": "SnapshotTesting",
+        "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
         "state": {
-          "branch": "main",
-          "revision": "924efdef1be7a8b4116b98eda33e20e5c8d64a47",
-          "version": null
+          "branch": null,
+          "revision": "f8a9c997c3c1dab4e216a8ec9014e23144cbab37",
+          "version": "1.9.0"
         }
       }
     ]

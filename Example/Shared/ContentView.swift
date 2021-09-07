@@ -17,19 +17,27 @@ struct ContentView: View {
     }
 
     var body: some View {
-        HStack(alignment: .center, spacing: 40) {
+        HStack(
+            alignment: .center,
+            spacing: .ds(.smallXl)
+        ) {
             Menu("E-mail", .mail, .colorRed)
             Menu("Calendar", .calendar, .colorGreen)
             Menu("Favorites", .star, .colorBlue)
         }
     }
 
-    func Menu(_ title: String, _ icon: DSIcon, _ color: DSColor) -> some View {
+    func Menu(
+        _ title: String,
+        _ icon: DSIcon,
+        _ color: DSColor
+    ) -> some View {
         VStack {
-            Image(icon)
+            Image.ds(icon)
                 .renderingMode(.template)
             Text(title)
                 .font(.ds(.subtitle2))
+                .padding([.top], .ds(.smallXxs))
         }.foregroundColor(.ds(color))
     }
 }

@@ -10,6 +10,7 @@ import UIKit
 public struct ThemeDataModel: Decodable {
     public let color: ColorDataModel?
     public let font: FontDataModel?
+    public let breakpoint: BreakpointDataModel?
 }
 
 public struct TokenDataModel<T: Decodable>: Decodable {

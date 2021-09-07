@@ -62,12 +62,20 @@ let package = Package(
             ]
         ),
         .target(
+            name: "Margin",
+            dependencies: ["Commons"],
+            resources: [
+                .process("Resources")
+            ]
+        ),
+        .target(
             name: "DesignSystem",
             dependencies: [
                 "Commons",
                 "Icons",
                 "Colors",
-                "Fonts"
+                "Fonts",
+                "Margin"
             ]
         ),
         .testTarget(

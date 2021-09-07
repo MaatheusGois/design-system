@@ -5,7 +5,7 @@
 //  Created by Matheus Gois on 08/08/21.
 //
 
-import UIKit
+import CoreGraphics
 
 public struct FontDataModel: Decodable, PropertyReflectable {
     public let heading1: FontTokenDataModel?

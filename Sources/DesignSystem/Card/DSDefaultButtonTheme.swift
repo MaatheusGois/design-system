@@ -7,7 +7,15 @@
 
 import UIKit
 
-open class DSDefaultButtonTheme: DSButtonTheme {
+open class DSPrimaryButtonTheme: DSButtonTheme {
+    open var titleFont: UIFont {
+        return .ds(.heading4)
+    }
+
+    open var titleColor: UIColor {
+        return .ds(.colorBlack)
+    }
+
     open var backgroundColor: UIColor {
         return .ds(.colorYellow)
     }
@@ -25,6 +33,6 @@ open class DSDefaultButtonTheme: DSButtonTheme {
     }
 
     open var borderColor: UIColor {
-        return .clear
+        return .ds(.colorBlack)
     }
 }

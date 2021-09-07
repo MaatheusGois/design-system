@@ -17,17 +17,23 @@ struct ContentView: View {
     }
 
     var body: some View {
+        DSButton(title: "Button 2") {
+
+        }
+    }
+
+    func Menu() -> some View {
         HStack(
             alignment: .center,
             spacing: .ds(.smallXl)
         ) {
-            Menu("E-mail", .mail, .colorRed)
-            Menu("Calendar", .calendar, .colorGreen)
-            Menu("Favorites", .star, .colorBlue)
+            Icon("E-mail", .mail, .colorRed)
+            Icon("Calendar", .calendar, .colorGreen)
+            Icon("Favorites", .star, .colorBlue)
         }
     }
 
-    func Menu(
+    func Icon(
         _ title: String,
         _ icon: DSIcon,
         _ color: DSColor
@@ -45,6 +51,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .previewDevice("iPhone 12 Pro")
     }
 }

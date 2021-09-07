@@ -9,6 +9,8 @@ import Foundation
 
 public protocol DSButtonTheme: AnyObject {
     // shape
+    var titleColor: UIColor { get }
+    var titleFont: UIFont { get }
     var backgroundColor: UIColor { get }
     var selectedBackgroundColor: UIColor { get }
     var borderWidth: CGFloat { get }

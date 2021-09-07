@@ -21,8 +21,6 @@ public enum DSFont: String, CaseIterable {
     case subtitle2
     case paragraph
 
-    // Private properties
-
     // Public properties
 
     public var value: UIFont {

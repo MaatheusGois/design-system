@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		823A4C5226C03A4800244D6B /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 823A4C5126C03A4800244D6B /* DesignSystem */; };
 		8243C51C26BF100A00BABE1E /* DesignSystemExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8243C50926BF100800BABE1E /* DesignSystemExampleApp.swift */; };
 		8243C51D26BF100A00BABE1E /* DesignSystemExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8243C50926BF100800BABE1E /* DesignSystemExampleApp.swift */; };
 		8243C51E26BF100A00BABE1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8243C50A26BF100800BABE1E /* ContentView.swift */; };
@@ -16,6 +15,7 @@
 		8243C52126BF100A00BABE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8243C50B26BF100A00BABE1E /* Assets.xcassets */; };
 		8251455D26BF4AFD00DF3353 /* design-tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = 8251455C26BF4AFD00DF3353 /* design-tokens.json */; };
 		8251455E26BF4AFD00DF3353 /* design-tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = 8251455C26BF4AFD00DF3353 /* design-tokens.json */; };
+		82B26A3C26E7C3A200408327 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 82B26A3B26E7C3A200408327 /* DesignSystem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				823A4C5226C03A4800244D6B /* DesignSystem in Frameworks */,
+				82B26A3C26E7C3A200408327 /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 			);
 			name = "DesignSystemExample (iOS)";
 			packageProductDependencies = (
-				823A4C5126C03A4800244D6B /* DesignSystem */,
+				82B26A3B26E7C3A200408327 /* DesignSystem */,
 			);
 			productName = "DesignSystemExample (iOS)";
 			productReference = 8243C51026BF100A00BABE1E /* DesignSystemExample.app */;
@@ -476,7 +476,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		823A4C5126C03A4800244D6B /* DesignSystem */ = {
+		82B26A3B26E7C3A200408327 /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignSystem;
 		};

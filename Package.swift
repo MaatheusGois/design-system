@@ -30,6 +30,14 @@ let package = Package(
         .library(
             name: "DesignSystem",
             targets: ["DesignSystem"]
+        ),
+        .library(
+            name: "Margin",
+            targets: ["Margin"]
+        ),
+        .library(
+            name: "Border",
+            targets: ["Border"]
         )
     ],
     dependencies: [
@@ -69,13 +77,21 @@ let package = Package(
             ]
         ),
         .target(
+            name: "Border",
+            dependencies: ["Commons"],
+            resources: [
+                .process("Resources")
+            ]
+        ),
+        .target(
             name: "DesignSystem",
             dependencies: [
                 "Commons",
                 "Icons",
                 "Colors",
                 "Fonts",
-                "Margin"
+                "Margin",
+                "Border"
             ]
         ),
         .testTarget(

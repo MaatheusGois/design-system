@@ -12,6 +12,7 @@ public struct ThemeDataModel: Decodable {
     public let font: FontDataModel?
     public let margin: MarginDataModel?
     public let border: BorderDataModel?
+    public let image: ImageDataModel?
 }
 
 public struct TokenDataModel<T: Decodable>: Decodable {

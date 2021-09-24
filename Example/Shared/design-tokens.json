@@ -1,629 +1,200 @@
 {
+  "image": {
+    "lg": {
+      "value": 170
+    },
+    "md": {
+      "value": 80
+    },
+    "sm": {
+      "value": 60
+    }
+  },
+
   "border": {
     "single": {
-      "description": null,
-      "type": "custom-stroke",
-      "value": {
-        "align": "inside",
-        "dashPattern": [],
-        "lineCap": "none",
-        "lineJoin": "miter",
-        "miterLimit": 4,
-        "weight": 2,
-        "color": "#000000ff"
-      }
+      "value": 2
     }
   },
   "breakpoint": {
     "smallXs": {
-      "category": "breakpoint",
-      "exportKey": "breakpoint",
-      "value": 8,
-      "type": "number",
-      "unit": "pixel"
+      "value": 8
     },
     "smallSm": {
-      "category": "breakpoint",
-      "exportKey": "breakpoint",
-      "value": 16,
-      "type": "number",
-      "unit": "pixel"
+      "value": 16
     },
     "smallMd": {
-      "category": "breakpoint",
-      "exportKey": "breakpoint",
-      "value": 24,
-      "type": "number",
-      "unit": "pixel"
+      "value": 24
     },
     "smallLg": {
-      "category": "breakpoint",
-      "exportKey": "breakpoint",
-      "value": 32,
-      "type": "number",
-      "unit": "pixel"
+      "value": 32
     },
     "smallXl": {
-      "category": "breakpoint",
-      "exportKey": "breakpoint",
-      "value": 48,
-      "type": "number",
-      "unit": "pixel"
+      "value": 48
     },
     "smallXxl": {
-      "category": "breakpoint",
-      "exportKey": "breakpoint",
-      "value": 64,
-      "type": "number",
-      "unit": "pixel"
+      "value": 64
     },
     "largeSm": {
-      "category": "breakpoint",
-      "exportKey": "breakpoint",
-      "value": 104,
-      "type": "number",
-      "unit": "pixel"
+      "value": 104
     },
     "largeXs": {
-      "category": "breakpoint",
-      "exportKey": "breakpoint",
-      "value": 80,
-      "type": "number",
-      "unit": "pixel"
+      "value": 80
     },
     "largeMd": {
-      "category": "breakpoint",
-      "exportKey": "breakpoint",
-      "value": 240,
-      "type": "number",
-      "unit": "pixel"
+      "value": 240
     },
     "smallXxs": {
-      "category": "breakpoint",
-      "exportKey": "breakpoint",
-      "value": 4,
-      "type": "number",
-      "unit": "pixel"
+      "value": 4
     }
   },
   "color": {
     "colorBlackOverlay": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(24, 25, 31, 0.3)",
-      "type": "color"
+      "value": "rgba(24, 25, 31, 0.3)"
     },
     "colorBlue": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(25, 71, 229, 1)",
-      "type": "color"
+      "value": "rgba(25, 71, 229, 1)"
     },
     "colorBlue800": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(128, 148, 255, 1)",
-      "type": "color"
+      "value": "rgba(128, 148, 255, 1)"
     },
     "colorBlue100": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(233, 231, 252, 1)",
-      "type": "color"
+      "value": "rgba(233, 231, 252, 1)"
     },
     "colorWhite": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(255, 255, 255, 1)",
-      "type": "color"
+      "value": "rgba(255, 255, 255, 1)"
     },
     "colorPink": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(255, 137, 187, 1)",
-      "type": "color"
+      "value": "rgba(255, 137, 187, 1)"
     },
     "colorPink800": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(255, 199, 222, 1)",
-      "type": "color"
+      "value": "rgba(255, 199, 222, 1)"
     },
     "colorPink200": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(255, 243, 248, 1)",
-      "type": "color"
+      "value": "rgba(255, 243, 248, 1)"
     },
     "colorBlack": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(24, 25, 31, 1)",
-      "type": "color"
+      "value": "rgba(24, 25, 31, 1)"
     },
     "colorBlack800": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(71, 74, 87, 1)",
-      "type": "color"
+      "value": "rgba(71, 74, 87, 1)"
     },
     "colorBlack300": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(159, 164, 180, 1)",
-      "type": "color"
+      "value": "rgba(159, 164, 180, 1)"
     },
     "colorBlack700": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(150, 155, 171, 1)",
-      "type": "color"
+      "value": "rgba(150, 155, 171, 1)"
     },
     "colorBlack200": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(238, 239, 244, 1)",
-      "type": "color"
+      "value": "rgba(238, 239, 244, 1)"
     },
     "colorBlack100": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(244, 245, 247, 1)",
-      "type": "color"
+      "value": "rgba(244, 245, 247, 1)"
     },
     "colorYellow": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(255, 189, 18, 1)",
-      "type": "color"
+      "value": "rgba(255, 189, 18, 1)"
     },
     "colorYellow800": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(255, 212, 101, 1)",
-      "type": "color"
+      "value": "rgba(255, 212, 101, 1)"
     },
     "colorYellow100": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(255, 244, 204, 1)",
-      "type": "color"
+      "value": "rgba(255, 244, 204, 1)"
     },
     "colorGreen": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(0, 198, 174, 1)",
-      "type": "color"
+      "value": "rgba(0, 198, 174, 1)"
     },
     "colorGreen800": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(97, 228, 197, 1)",
-      "type": "color"
+      "value": "rgba(97, 228, 197, 1)"
     },
     "colorGreen100": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(214, 252, 247, 1)",
-      "type": "color"
+      "value": "rgba(214, 252, 247, 1)"
     },
     "colorRed": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(249, 90, 44, 1)",
-      "type": "color"
+      "value": "rgba(249, 90, 44, 1)"
     },
     "colorRed800": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(255, 150, 146, 1)",
-      "type": "color"
+      "value": "rgba(255, 150, 146, 1)"
     },
     "colorRed100": {
-      "category": "color",
-      "exportKey": "color",
-      "value": "rgba(255, 232, 232, 1)",
-      "type": "color"
+      "value": "rgba(255, 232, 232, 1)"
     }
   },
   "font": {
     "heading1": {
-      "category": "font",
-      "exportKey": "font",
       "fontSize": {
-        "value": 44,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textDecoration": {
-        "value": "none",
-        "type": "string"
+        "value": 44
       },
       "fontFamily": {
-        "value": "Montserrat",
-        "type": "string"
-      },
-      "fontWeight": {
-        "value": 800,
-        "type": "number"
-      },
-      "fontStyle": {
-        "value": "normal",
-        "type": "string"
-      },
-      "fontStretch": {
-        "value": "normal",
-        "type": "string"
+        "value": "Montserrat"
       },
       "_fontStyleOld": {
-        "value": "ExtraBold",
-        "type": "string"
-      },
-      "letterSpacing": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixels"
-      },
-      "lineHeight": {
-        "value": 54,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphIndent": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphSpacing": {
-        "value": 8,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textCase": {
-        "value": "none",
-        "type": "string"
+        "value": "ExtraBold"
       }
     },
     "heading2": {
-      "category": "font",
-      "exportKey": "font",
       "fontSize": {
-        "value": 36,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textDecoration": {
-        "value": "none",
-        "type": "string"
+        "value": 36
       },
       "fontFamily": {
-        "value": "Montserrat",
-        "type": "string"
-      },
-      "fontWeight": {
-        "value": 700,
-        "type": "number"
-      },
-      "fontStyle": {
-        "value": "normal",
-        "type": "string"
-      },
-      "fontStretch": {
-        "value": "normal",
-        "type": "string"
+        "value": "Montserrat"
       },
       "_fontStyleOld": {
-        "value": "Bold",
-        "type": "string"
-      },
-      "letterSpacing": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixels"
-      },
-      "lineHeight": {
-        "value": 40,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphIndent": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphSpacing": {
-        "value": 8,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textCase": {
-        "value": "none",
-        "type": "string"
+        "value": "Bold"
       }
     },
     "heading3": {
-      "category": "font",
-      "exportKey": "font",
       "fontSize": {
-        "value": 27,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textDecoration": {
-        "value": "none",
-        "type": "string"
+        "value": 27
       },
       "fontFamily": {
-        "value": "Montserrat",
-        "type": "string"
-      },
-      "fontWeight": {
-        "value": 800,
-        "type": "number"
-      },
-      "fontStyle": {
-        "value": "normal",
-        "type": "string"
-      },
-      "fontStretch": {
-        "value": "normal",
-        "type": "string"
+        "value": "Montserrat"
       },
       "_fontStyleOld": {
-        "value": "ExtraBold",
-        "type": "string"
-      },
-      "letterSpacing": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixels"
-      },
-      "lineHeight": {
-        "value": 32,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphIndent": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphSpacing": {
-        "value": 8,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textCase": {
-        "value": "none",
-        "type": "string"
+        "value": "ExtraBold"
       }
     },
     "heading4": {
-      "category": "font",
-      "exportKey": "font",
       "fontSize": {
-        "value": 24,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textDecoration": {
-        "value": "none",
-        "type": "string"
+        "value": 24
       },
       "fontFamily": {
-        "value": "Montserrat",
-        "type": "string"
-      },
-      "fontWeight": {
-        "value": 800,
-        "type": "number"
-      },
-      "fontStyle": {
-        "value": "normal",
-        "type": "string"
-      },
-      "fontStretch": {
-        "value": "normal",
-        "type": "string"
+        "value": "Montserrat"
       },
       "_fontStyleOld": {
-        "value": "ExtraBold",
-        "type": "string"
-      },
-      "letterSpacing": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixels"
-      },
-      "lineHeight": {
-        "value": 28,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphIndent": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphSpacing": {
-        "value": 8,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textCase": {
-        "value": "none",
-        "type": "string"
+        "value": "ExtraBold"
       }
     },
     "subtitle1": {
-      "category": "font",
-      "exportKey": "font",
       "fontSize": {
-        "value": 24,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textDecoration": {
-        "value": "none",
-        "type": "string"
+        "value": 24
       },
       "fontFamily": {
-        "value": "Montserrat",
-        "type": "string"
-      },
-      "fontWeight": {
-        "value": 500,
-        "type": "number"
-      },
-      "fontStyle": {
-        "value": "normal",
-        "type": "string"
-      },
-      "fontStretch": {
-        "value": "normal",
-        "type": "string"
+        "value": "Montserrat"
       },
       "_fontStyleOld": {
-        "value": "Medium",
-        "type": "string"
-      },
-      "letterSpacing": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixels"
-      },
-      "lineHeight": {
-        "value": 28,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphIndent": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphSpacing": {
-        "value": 8,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textCase": {
-        "value": "none",
-        "type": "string"
+        "value": "Medium"
       }
     },
     "subtitle2": {
-      "category": "font",
-      "exportKey": "font",
       "fontSize": {
-        "value": 17,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textDecoration": {
-        "value": "none",
-        "type": "string"
+        "value": 17
       },
       "fontFamily": {
-        "value": "Montserrat",
-        "type": "string"
-      },
-      "fontWeight": {
-        "value": 500,
-        "type": "number"
-      },
-      "fontStyle": {
-        "value": "normal",
-        "type": "string"
-      },
-      "fontStretch": {
-        "value": "normal",
-        "type": "string"
+        "value": "Montserrat"
       },
       "_fontStyleOld": {
-        "value": "Medium",
-        "type": "string"
-      },
-      "letterSpacing": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixels"
-      },
-      "lineHeight": {
-        "value": 24,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphIndent": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphSpacing": {
-        "value": 8,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textCase": {
-        "value": "none",
-        "type": "string"
+        "value": "Medium"
       }
     },
     "paragraph": {
-      "category": "font",
-      "exportKey": "font",
       "fontSize": {
-        "value": 13,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textDecoration": {
-        "value": "none",
-        "type": "string"
+        "value": 13
       },
       "fontFamily": {
-        "value": "Montserrat",
-        "type": "string"
-      },
-      "fontWeight": {
-        "value": 500,
-        "type": "number"
-      },
-      "fontStyle": {
-        "value": "normal",
-        "type": "string"
-      },
-      "fontStretch": {
-        "value": "normal",
-        "type": "string"
+        "value": "Montserrat"
       },
       "_fontStyleOld": {
-        "value": "Medium",
-        "type": "string"
-      },
-      "letterSpacing": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixels"
-      },
-      "lineHeight": {
-        "value": 18,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphIndent": {
-        "value": 0,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "paragraphSpacing": {
-        "value": 8,
-        "type": "number",
-        "unit": "pixel"
-      },
-      "textCase": {
-        "value": "none",
-        "type": "string"
+        "value": "Medium"
       }
     }
   }

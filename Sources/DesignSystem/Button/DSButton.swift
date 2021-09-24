@@ -24,8 +24,6 @@ public struct DSButtonStyle: ButtonStyle {
 
     @State public var theme: DSButtonTheme
 
-//    open var iconAlingment: IconAlingment = .left
-
     // MARK: - Lifecycle
 
     public func makeBody(configuration: Configuration) -> some View {

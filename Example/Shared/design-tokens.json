@@ -1,4 +1,19 @@
 {
+  "border": {
+    "single": {
+      "description": null,
+      "type": "custom-stroke",
+      "value": {
+        "align": "inside",
+        "dashPattern": [],
+        "lineCap": "none",
+        "lineJoin": "miter",
+        "miterLimit": 4,
+        "weight": 2,
+        "color": "#000000ff"
+      }
+    }
+  },
   "breakpoint": {
     "smallXs": {
       "category": "breakpoint",

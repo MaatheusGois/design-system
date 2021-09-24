@@ -17,8 +17,14 @@ struct ContentView: View {
     }
 
     var body: some View {
-        DSButton(title: "Button 2") {
+        VStack {
+            DSButton(title: "Button 1") {
 
+            }
+
+            DSButton(title: "Button 2", theme: .secondary) {
+
+            }
         }
     }
 

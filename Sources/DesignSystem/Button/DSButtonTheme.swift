@@ -16,3 +16,17 @@ public protocol DSButtonTheme: AnyObject {
     var borderWidth: CGFloat { get }
     var borderColor: UIColor { get }
 }
+
+public enum DSButtonThemeStyle {
+    case primary
+    case secondary
+
+    var style: DSButtonTheme {
+        switch self {
+        case .primary:
+            return DSPrimaryButtonTheme()
+        case .secondary:
+            return DSSecondaryButtonTheme()
+        }
+    }
+}

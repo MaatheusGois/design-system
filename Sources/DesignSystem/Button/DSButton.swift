@@ -54,7 +54,7 @@ public struct DSButton: View {
 
     // MARK: - Properties
 
-    @State public var theme: DSButtonTheme = DSPrimaryButtonTheme()
+    @State public var theme: DSButtonTheme
 
     private let disabled: Bool
     private let title: String
@@ -65,11 +65,13 @@ public struct DSButton: View {
     public init(
         title: String,
         disabled: Bool = false,
+        theme: DSButtonThemeStyle = .primary,
         action: @escaping () -> Void
     ) {
         self.title = title
         self.action = action
         self.disabled = disabled
+        self.theme = theme.style
     }
 
     public var body: some View {

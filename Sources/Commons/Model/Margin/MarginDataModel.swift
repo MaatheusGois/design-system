@@ -7,7 +7,7 @@
 
 import CoreGraphics
 
-public struct BreakpointDataModel: Decodable, PropertyReflectable {
+public struct MarginDataModel: Decodable, PropertyReflectable {
     public let smallXs: TokenDataModel<CGFloat>?
     public let smallXxs: TokenDataModel<CGFloat>?
     public let smallSm: TokenDataModel<CGFloat>?

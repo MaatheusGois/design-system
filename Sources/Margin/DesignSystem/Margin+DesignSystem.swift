@@ -15,7 +15,7 @@ public enum DSMargin: String {
     // Public properties
 
     public var value: CGFloat {
-        let token = CommonsManager.shared.theme?.breakpoint?[rawValue] as? TokenDataModel<CGFloat>
+        let token = CommonsManager.shared.theme?.margin?[rawValue] as? TokenDataModel<CGFloat>
         return token?.value ?? .zero
     }
 }

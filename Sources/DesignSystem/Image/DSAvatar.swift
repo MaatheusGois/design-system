@@ -1,5 +1,5 @@
 //
-//  DSImage.swift
+//  DSAvatar.swift
 //  
 //
 //  Created by Matheus Gois on 24/09/21.
@@ -8,7 +8,7 @@
 import Foundation
 
 @available(iOS 13.0.0, *)
-public struct DSImage: View {
+public struct DSAvatar: View {
 
     // Properties
 
@@ -24,15 +24,16 @@ public struct DSImage: View {
 
     public var body: some View {
         Image(icon)
+            .renderingMode(.template)
             .resizable()
             .frame(width: 30, height: 30)
+            .foregroundColor(.blue)
             .background(Color.red)
             .clipShape(RoundedRectangle(cornerRadius: 30))
 
             .overlay(
                 RoundedRectangle(cornerRadius: 30)
                     .stroke(lineWidth: 2).foregroundColor(Color.black)
-
             )
     }
 }

@@ -7,7 +7,7 @@
 
 import CoreGraphics
 
-public class ImageDataModel: Decodable, PropertyReflectable {
+public class AvatarDataModel: Decodable, PropertyReflectable {
     public var lg: TokenDataModel<CGFloat>?
     public let md: TokenDataModel<CGFloat>?
     public let sm: TokenDataModel<CGFloat>?

@@ -86,7 +86,7 @@ public struct DSButton: View {
 
     public var body: some View {
         Button(action: action) {
-            HStack(alignment: .center) {
+            HStack {
                 Spacer()
                 Text(title)
                 Image(icon)

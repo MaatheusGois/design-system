@@ -18,7 +18,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack(alignment: .center) {
-            DSButton(title: "ButtonButtonButton 1") {
+            DSButton(title: "Button Primary 1") {
 
             }
 
@@ -26,7 +26,7 @@ struct ContentView: View {
 
             }
 
-            DSImage(icon: .bell)
+            DSAvatar(icon: .bell)
         }.padding()
     }
 

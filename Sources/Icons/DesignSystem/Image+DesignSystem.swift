@@ -20,7 +20,7 @@ public enum DSImageSize: String, CaseIterable {
     // Computed Properties
 
     public var value: CGFloat {
-        let token = CommonsManager.shared.theme?.image?[rawValue] as? TokenDataModel<CGFloat>
+        let token = CommonsManager.shared.theme?.avatar?[rawValue] as? TokenDataModel<CGFloat>
         return token?.value ?? .zero
     }
 }

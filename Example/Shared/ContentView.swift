@@ -17,15 +17,17 @@ struct ContentView: View {
     }
 
     var body: some View {
-        VStack {
-            DSButton(title: "Button 1") {
+        VStack(alignment: .center) {
+            DSButton(title: "ButtonButtonButton 1") {
 
             }
 
             DSButton(title: "Button 2", theme: .secondary) {
 
             }
-        }
+
+            DSImage(icon: .bell)
+        }.padding()
     }
 
     func Menu() -> some View {

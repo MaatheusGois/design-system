@@ -5,7 +5,7 @@
 //  Created by Matheus Gois on 07/09/21.
 //
 
-import Foundation
+import Icons
 
 @available(iOS 13.0.0, *)
 public struct DSButtonStyle: ButtonStyle {
@@ -52,12 +52,20 @@ public struct DSButtonStyle: ButtonStyle {
 @available(iOS 13.0, *)
 public struct DSButton: View {
 
+    // MARK: - Constants
+
+    private enum Constants {
+        static let buttonHeight: CGFloat = 60
+        static let buttoMinWidth: CGFloat = 167
+    }
+
     // MARK: - Properties
 
     @State public var theme: DSButtonTheme
 
     private let disabled: Bool
     private let title: String
+    private let icon: DSIcon
     private let action: () -> Void
 
     // MARK: - Lifecycle
@@ -66,22 +74,32 @@ public struct DSButton: View {
         title: String,
         disabled: Bool = false,
         theme: DSButtonThemeStyle = .primary,
+        icon: DSIcon = .chevronRight,
         action: @escaping () -> Void
     ) {
         self.title = title
-        self.action = action
         self.disabled = disabled
         self.theme = theme.style
+        self.icon = icon
+        self.action = action
     }
 
     public var body: some View {
         Button(action: action) {
-            Text(title)
-                .frame(maxWidth: .infinity)
+            HStack(alignment: .center) {
+                Spacer()
+                Text(title)
+                Image(icon)
+                    .renderingMode(.template)
+                    .foregroundColor(theme.titleColor.iOS13)
+                Spacer()
+            }
         }
+        .frame(minWidth: Constants.buttoMinWidth)
+        .frame(height: Constants.buttonHeight)
         .buttonStyle(
             DSButtonStyle(theme: theme)
         )
-        .disabled(self.disabled)
+        .disabled(disabled)
     }
 }

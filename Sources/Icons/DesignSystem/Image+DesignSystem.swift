@@ -9,7 +9,7 @@ import Commons
 import SwiftUI
 
 /// Design System - Images
-public enum DSImage: String, CaseIterable {
+public enum DSImageSize: String, CaseIterable {
 
     // Cases
 

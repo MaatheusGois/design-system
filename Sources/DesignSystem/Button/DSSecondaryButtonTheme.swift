@@ -9,7 +9,7 @@ import SwiftUI
 
 open class DSSecondaryButtonTheme: DSButtonTheme {
     open var titleFont: UIFont {
-        return .ds(.heading4)
+        return .ds(.heading5)
     }
 
     open var titleColor: UIColor {

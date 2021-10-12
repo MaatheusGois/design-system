@@ -17,6 +17,7 @@ public enum DSFont: String, CaseIterable {
     case heading2
     case heading3
     case heading4
+    case heading5
     case subtitle1
     case subtitle2
     case paragraph

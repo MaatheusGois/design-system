@@ -164,6 +164,17 @@
         "value": "ExtraBold"
       }
     },
+    "heading5": {
+      "fontSize": {
+        "value": 17
+      },
+      "fontFamily": {
+        "value": "Montserrat"
+      },
+      "_fontStyleOld": {
+        "value": "ExtraBold"
+      }
+    },
     "subtitle1": {
       "fontSize": {
         "value": 24

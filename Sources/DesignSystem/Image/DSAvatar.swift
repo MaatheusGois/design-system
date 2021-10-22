@@ -23,17 +23,23 @@ public struct DSAvatar: View {
     }
 
     public var body: some View {
-        Image(icon)
-            .renderingMode(.template)
-            .resizable()
-            .frame(width: 30, height: 30)
-            .foregroundColor(.blue)
-            .background(Color.red)
-            .clipShape(RoundedRectangle(cornerRadius: 30))
-
-            .overlay(
-                RoundedRectangle(cornerRadius: 30)
-                    .stroke(lineWidth: 2).foregroundColor(Color.black)
-            )
+        HStack {
+            Image(icon)
+                .renderingMode(.template)
+                .resizable()
+                .frame(width: 150, height: 150)
+                .foregroundColor(.black)
+                .scaledToFill()
+        }
+        .frame(width: 170, height: 170)
+        .background(Color.red)
+        .clipShape(
+            RoundedRectangle(cornerRadius: 170)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 170)
+                .stroke(lineWidth: 2)
+                .foregroundColor(.black)
+        )
     }
 }

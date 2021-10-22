@@ -66,6 +66,7 @@ public struct DSButton: View {
     private let disabled: Bool
     private let title: String
     private let icon: DSIcon
+    private let aligment: Aligment
     private let action: () -> Void
 
     // MARK: - Lifecycle
@@ -75,12 +76,14 @@ public struct DSButton: View {
         disabled: Bool = false,
         theme: DSButtonThemeStyle = .primary,
         icon: DSIcon = .chevronRight,
+        aligment: Aligment = .right,
         action: @escaping () -> Void
     ) {
         self.title = title
         self.disabled = disabled
         self.theme = theme.style
         self.icon = icon
+        self.aligment = aligment
         self.action = action
     }
 
@@ -88,10 +91,9 @@ public struct DSButton: View {
         Button(action: action) {
             HStack {
                 Spacer()
+                if aligment == .left { image() }
                 Text(title)
-                Image(icon)
-                    .renderingMode(.template)
-                    .foregroundColor(theme.titleColor.iOS13)
+                if aligment == .right { image() }
                 Spacer()
             }
         }
@@ -101,5 +103,21 @@ public struct DSButton: View {
             DSButtonStyle(theme: theme)
         )
         .disabled(disabled)
+    }
+
+    private func image() -> some View {
+        Image(icon)
+            .renderingMode(.template)
+            .foregroundColor(theme.titleColor.iOS13)
+    }
+}
+
+// MARK: - Aligment
+
+@available(iOS 13.0, *)
+public extension DSButton {
+    enum Aligment {
+        case left
+        case right
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import DesignSystem
+import SwiftUI
 
 struct ContentView: View {
 
@@ -17,17 +18,7 @@ struct ContentView: View {
     }
 
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .center) {
-                ForEach(DSIconAvatar.allCases) { avatar in
-                    DSAvatar(
-                        icon: avatar,
-                        color: .aleatory,
-                        size: .md
-                    )
-                }
-            }.padding()
-        }
+        DSCard(backgroundColor: .aleatory).padding()
     }
 
     var avatars: some View {

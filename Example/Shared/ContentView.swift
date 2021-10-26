@@ -17,16 +17,42 @@ struct ContentView: View {
     }
 
     var body: some View {
-        VStack(alignment: .center) {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(alignment: .center) {
+                ForEach(DSIconAvatar.allCases) { avatar in
+                    DSAvatar(
+                        icon: avatar,
+                        color: .aleatory,
+                        size: .md
+                    )
+                }
+            }.padding()
+        }
+    }
+
+    var avatars: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(alignment: .center) {
+                ForEach(DSIconAvatar.allCases) { avatar in
+                    DSAvatar(
+                        icon: avatar,
+                        color: .aleatory,
+                        size: .md
+                    )
+                }
+            }.padding()
+        }
+    }
+
+    var buttons: some View {
+        HStack {
             DSButton(title: "Primary") { }
 
             DSButton(title: "Secondary", theme: .secondary, icon: .heartFill,  aligment: .left) { }
-
-            DSAvatar(icon: .bell)
-        }.padding()
+        }
     }
 
-    func Menu() -> some View {
+    var menu: some View {
         HStack(
             alignment: .center,
             spacing: .ds(.smallXl)

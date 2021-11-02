@@ -18,6 +18,10 @@ struct ContentView: View {
     }
 
     var body: some View {
+        DSCell(backgroundColor: .aleatory)
+    }
+
+    var card: some View {
         DSCard(backgroundColor: .aleatory).padding()
     }
 

@@ -24,8 +24,8 @@ let package = Package(
             targets: ["Fonts"]
         ),
         .library(
-            name: "Icons",
-            targets: ["Icons"]
+            name: "Images",
+            targets: ["Images"]
         ),
         .library(
             name: "DesignSystem",
@@ -63,7 +63,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "Icons",
+            name: "Images",
             dependencies: ["Commons"],
             resources: [
                 .process("Resources")
@@ -87,7 +87,7 @@ let package = Package(
             name: "DesignSystem",
             dependencies: [
                 "Commons",
-                "Icons",
+                "Images",
                 "Colors",
                 "Fonts",
                 "Margin",
@@ -96,7 +96,7 @@ let package = Package(
         ),
         .testTarget(
             name: "IconsTests",
-            dependencies: ["Icons", "SnapshotTesting"]
+            dependencies: ["Images", "SnapshotTesting"]
         )
     ]
 )

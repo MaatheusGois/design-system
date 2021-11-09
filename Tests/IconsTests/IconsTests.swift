@@ -1,5 +1,5 @@
     import XCTest
-    @testable import Icons
+    @testable import Images
 
     final class IconsTests: XCTestCase {
         func testIconsSource() {

@@ -5,7 +5,7 @@
 //  Created by Matheus Gois on 07/09/21.
 //
 
-import Icons
+import Images
 
 @available(iOS 13.0.0, *)
 public struct DSButtonStyle: ButtonStyle {

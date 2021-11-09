@@ -30,27 +30,35 @@ public enum DSIconAvatar: String, CaseIterable {
     }
 }
 
+// MARK: - Identifiable
+
+extension DSIconAvatar: Identifiable {
+    public var id: UUID { .init() }
+}
+
 // MARK: - Extensions
 
 public extension UIImage {
+
     // Static Methods
 
-    static func ds(_ type: DSAvatar) -> UIImage {
+    static func ds(_ type: DSIconAvatar) -> UIImage {
         return type.value
     }
 }
 
 @available(iOS 13.0, *)
 public extension Image {
+
     // LifeCycle
 
-    init(_ type: DSAvatar) {
+    init(_ type: DSIconAvatar) {
         self.init(uiImage: type.value)
     }
 
     // Static Methods
 
-    static func ds(_ type: DSAvatar) -> Image {
+    static func ds(_ type: DSIconAvatar) -> Image {
         return .init(uiImage: type.value)
     }
 }

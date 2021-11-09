@@ -22,6 +22,16 @@ public enum DSColor: String {
 
 // MARK: - Extensions
 
+extension Background {
+    
+}
+
+extension DSColor: CaseIterable {
+    public static var aleatory: Self {
+        allCases.randomElement() ?? .colorWhite
+    }
+}
+
 public extension UIColor {
     static func ds(_ type: DSColor) -> UIColor {
         return type.value

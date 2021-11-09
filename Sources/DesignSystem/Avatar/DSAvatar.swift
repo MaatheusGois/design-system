@@ -6,40 +6,46 @@
 //
 
 import Foundation
+import Images
+import Colors
 
 @available(iOS 13.0.0, *)
 public struct DSAvatar: View {
 
     // Properties
 
-    private let icon: DSIcon
+    public let icon: DSIconAvatar
+    public let color: DSColor
+    public let size: DSImageSize
 
     // Lifecycle
 
     public init(
-        icon: DSIcon
+        icon: DSIconAvatar,
+        color: DSColor,
+        size: DSImageSize
     ) {
         self.icon = icon
+        self.color = color
+        self.size = size
     }
 
     public var body: some View {
         HStack {
             Image(icon)
-                .renderingMode(.template)
                 .resizable()
-                .frame(width: 150, height: 150)
-                .foregroundColor(.black)
+                .frame(width: size.value, height: size.value)
                 .scaledToFill()
         }
-        .frame(width: 170, height: 170)
-        .background(Color.red)
+        .frame(width: size.value, height: size.value)
+        .background(color.value.iOS13)
         .clipShape(
-            RoundedRectangle(cornerRadius: 170)
+            RoundedRectangle(cornerRadius: size.value/2)
         )
         .overlay(
-            RoundedRectangle(cornerRadius: 170)
-                .stroke(lineWidth: 2)
-                .foregroundColor(.black)
+            RoundedRectangle(cornerRadius: size.value/2)
+                .stroke(lineWidth: 2) // Change to Theme
+                .foregroundColor(.ds(.colorBlack))
         )
     }
 }

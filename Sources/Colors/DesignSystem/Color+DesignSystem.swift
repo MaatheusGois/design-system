@@ -20,12 +20,6 @@ public enum DSColor: String {
     }
 }
 
-// MARK: - Extensions
-
-extension Background {
-    
-}
-
 extension DSColor: CaseIterable {
     public static var aleatory: Self {
         allCases.randomElement() ?? .colorWhite

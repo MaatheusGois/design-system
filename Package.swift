@@ -45,15 +45,11 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Commons",
-            dependencies: []
+            name: "Commons"
         ),
         .target(
             name: "Colors",
-            dependencies: ["Commons"],
-            resources: [
-                .process("Resources")
-            ]
+            dependencies: ["Commons"]
         ),
         .target(
             name: "Fonts",
@@ -71,17 +67,11 @@ let package = Package(
         ),
         .target(
             name: "Margin",
-            dependencies: ["Commons"],
-            resources: [
-                .process("Resources")
-            ]
+            dependencies: ["Commons"]
         ),
         .target(
             name: "Border",
-            dependencies: ["Commons"],
-            resources: [
-                .process("Resources")
-            ]
+            dependencies: ["Commons"]
         ),
         .target(
             name: "DesignSystem",
@@ -96,7 +86,10 @@ let package = Package(
         ),
         .testTarget(
             name: "IconsTests",
-            dependencies: ["Images", "SnapshotTesting"]
+            dependencies: [
+                "Images",
+                "SnapshotTesting"
+            ]
         )
     ]
 )

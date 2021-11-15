@@ -31,6 +31,7 @@ public extension UIColor {
 
     // MARK: - Properties
 
+    @available(watchOS 6.0, *)
     @available(iOS 13.0, *)
     var iOS13: Color { .init(self) }
 }

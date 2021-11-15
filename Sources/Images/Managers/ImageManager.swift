@@ -11,5 +11,5 @@ import SwiftUI
 /// - Parameter name: image name
 /// - Returns: image source
 public func ImageManager(named name: String) -> UIImage? {
-    UIImage(named: name, in: .module, compatibleWith: nil)
+    return UIImage(named: name, in: .module, compatibleWith: nil)
 }
